@@ -1,0 +1,42 @@
+[
+    {
+        "id": 0,
+        "name": "ROLEX",
+        "image": "rolex.jpg"
+    },
+    {
+        "id": 1,
+        "name": "BOSS",
+        "image": "boss.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Bertling",
+        "image": "bertling.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Olivia Burton",
+        "image": "olivia.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Michael Kors",
+        "image": "kros.jpg"
+    },
+    {
+        "id": 5,
+        "name": "TAGHeuer",
+        "image": "heuer.jpg"
+    },
+    {
+        "id": 6,
+        "name": "LONGINES",
+        "image": "longines.jpg"
+    },
+    {
+        "id": 7,
+        "name": "OMEGA",
+        "image": "omega.jpg"
+    }
+]
