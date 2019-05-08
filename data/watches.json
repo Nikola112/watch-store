@@ -78,5 +78,53 @@
         "genderId": 2,
         "typeId": 0,
         "manufacturerId": 0
+    },
+    {
+        "id": 10,
+        "name": "Designer 5",
+        "image": "g-item7.jpg",
+        "genderId": 2,
+        "typeId": 1,
+        "manufacturerId": 5
+    },
+    {
+        "id": 11,
+        "name": "Extra 1",
+        "image": "g-item8.jpg",
+        "genderId": 1,
+        "typeId": 0,
+        "manufacturerId": 2
+    },
+    {
+        "id": 12,
+        "name": "Luxury 1",
+        "image": "g-item9.jpg",
+        "genderId": 1,
+        "typeId": 0,
+        "manufacturerId": 2
+    },
+    {
+        "id": 13,
+        "name": "Cool 1",
+        "image": "g-item10.jpg",
+        "genderId": 2,
+        "typeId": 1,
+        "manufacturerId": 1
+    },
+    {
+        "id": 14,
+        "name": "Cool 2",
+        "image": "g-item11.jpg",
+        "genderId": 2,
+        "typeId": 1,
+        "manufacturerId": 0
+    },
+    {
+        "id": 15,
+        "name": "Luxury 2",
+        "image": "g-item12.jpg",
+        "genderId": 1,
+        "typeId": 0,
+        "manufacturerId": 6
     }
 ]
