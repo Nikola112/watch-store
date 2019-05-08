@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+
+        <title>WatchShop | Find best watch that suits you</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <meta name="author" content="Nikola Jovic" />
+        <meta name="keywords" content="watch, watchshop, watches, login, signin, register, signup" />
+        <meta name="description" content="This is registration page." />
+
+        <link rel="shortcut icon" href="../img/icon.png" />
+
+        <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet" />
+        <link rel="stylesheet" href="../css/bootstrap.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    </head>
+
+    <body>
+        <header>
+            <div class="d-none d-lg-block color-primary">
+                <nav class="navbar navbar-header pt-3 px-4">
+                    <div class="header-item link">
+                        <span class="fa fa-phone" aria-hidden="true"></span>
+                        &nbsp;011/0000000
+                    </div>
+                    <div class="header-item ml-auto">
+                        <a href="register.html" class="link">
+                            <span class="fa fa-sign-in" aria-hidden="true"></span>
+                            &nbsp;Sign in or Register
+                        </a>
+                    </div>
+                    <div class="header-item link">
+                        <span class="fa fa-map-marker" aria-hidden="true"></span>
+                        &nbsp;Store Locator
+                    </div>
+                    <div class="header-item link">
+                        <span class="fa fa-shopping-bag" aria-hidden="true"></span>
+                        &nbsp;0 Items
+                    </div>
+                </nav>
+
+                <nav class="navbar navbar-header nav-logo">
+                    <div class="navbar-brand mx-auto py-0">
+                        <a href="../index.html" class="logo text-uppercase">
+                            WatchShop
+                            <div class="my-row">
+                                <div class="bar"></div>
+                                <div class="small-text text-uppercase">Since 1821</div>
+                                <div class="bar"></div>
+                            </div>
+                        </a>
+                    </div>
+                </nav>
+
+                <nav class="navbar navbar-header pb-3">
+                    <span class="link">
+                        Choose language
+                    </span>
+                    <form class="form-inline ml-auto">
+                        <div class="search">
+                            <input class="form-control search-box" type="search" placeholder="Search" aria-label="Search" />
+                            <span class="fa fa-search" aria-hidden="true"></span>
+                        </div>
+                    </form>
+                </nav>
+            </div>
+
+            <div id="main-navigation" class="color-primary">
+                <div class="container">
+                    <nav class="navbar navbar-expand-lg">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="fa fa-bars px-1 pt-1" aria-hidden="true"></span>
+                            <span class="small-text pb-1">Menu</span>
+                        </button>
+
+                        <div class="navbar-brand mx-auto d-block d-lg-none">
+                            <a href="../index.html" class="logo text-uppercase">
+                                WatchShop
+                                <div class="my-row">
+                                    <div class="bar"></div>
+                                    <div class="small-text text-uppercase">Since 1821</div>
+                                    <div class="bar"></div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="link d-block d-lg-none shopping-cart">
+                            <span class="fa fa-shopping-cart" aria-hidden="true"></span>
+                        </div>
+
+                        <div class="collapse navbar-collapse" id="main-navbar">
+                            <ul class="navbar-nav nav-fill w-100">
+                                <li class="nav-item">
+                                    <a class="nav-link link text-uppercase" href="../index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link link text-uppercase" href="gallery.html">Gallery</a>
+                                </li>
+                                <li class="nav-item">
+                                    <!-- Span zato sto linkovi koji ne vode nigde nisu dobri za SEO -->
+                                    <span class="nav-link link text-uppercase">Brands</span>
+                                </li>
+                                <li class="nav-item">
+                                    <span class="nav-link link text-uppercase">Mens watches</span>
+                                </li>
+                                <li class="nav-item">
+                                    <span class="nav-link link text-uppercase">Ladies watches</span>
+                                </li>
+                                <li class="nav-item">
+                                    <span class="nav-link link text-uppercase">Sell your watch</span>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link link text-uppercase" href="contact.html">Contact</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link link text-uppercase" href="aboutme.html">About me</a>
+                                </li>
+                                <li class="nav-item d-xs-block d-lg-none active">
+                                    <a class="nav-link link text-uppercase" href="register.html">Sign in or Register</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <div id="main">
+            <div class="container" id="signUp">
+                <div class="row">
+                    <div class="col-12 border-bottom">
+                        <h1 class="text-dark text-center text-uppercase py-3">
+                            Sign in or Register
+                        </h1>
+                    </div>
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-xs-12 col-lg-6">
+                                <h2 class="text-dark text-center text-uppercase py-3">
+                                    Sign in
+                                </h2>
+                                <div class="text-center py-2">
+                                    <div class="sign-in-icon mx-auto">
+                                        <span class="fa fa-user" aria-hidden="true"></span>
+                                    </div>
+                                </div>
+                                
+                                <form action="login.php" method="post" class="pb-3">
+                                    <input type="text" placeholder="Username or email" />
+                                    <input type="password" placeholder="Password" />
+                                    <input type="submit" value="Sign in" />
+                                </form>
+                            </div>
+                            <div class="col-xs-12 col-lg-6">
+                                <hr class="d-block d-lg-none my-1" />
+                                <h2 class="text-dark text-center text-uppercase py-3">
+                                    Register
+                                </h2>
+                                
+                                <form action="register.php" method="post" class="pb-3">
+                                    <input type="text" placeholder="First name" />
+                                    <input type="text" placeholder="Last name" />
+                                    <input type="text" placeholder="Username" />
+                                    <input type="email" placeholder="Email" />
+                                    <input type="password" placeholder="Password" />
+                                    <input type="password" placeholder="Repeat password"/>
+                                    <input type="submit" value="Register" />
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer id="footer">
+            <div class="color-info">
+                <div class="w-100 back-to-top mx-auto text-center text-uppercase text-dark p-3 scrollToTop">
+                    <span class="fa fa-caret-up" aria-hidden="true"></span>
+                    &nbsp;Back to top&nbsp;
+                    <span class="fa fa-caret-up" aria-hidden="true"></span>
+                </div>
+            </div>
+
+            <div class="container-fluid">
+                <div class="mx-auto text-center text-dark text-uppercase small-text">
+                    SIGN UP FOR THE LATEST NEWS &amp; OFFERS
+                </div>
+
+                <form class="pb-4 mx-auto text-center" action="newsletter.php" method="post">
+                    <input class="newsletter-input newsletter-email mr-1" type="email" placeholder="Please enter your email address" />
+                    <input class="newsletter-input newsletter-submit" type="submit" value="SIGN UP" />
+                </form>
+            </div>
+
+            <div id="footer-menu" class="container py-2 d-none d-lg-block">
+                <ul class="nav mx-auto">
+                    <li class="nav-item ml-auto">
+                        <a href="../index.html" class="nav-link text-uppercase">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="gallery.html" class="nav-link text-uppercase">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <span class="nav-link text-uppercase">Brands</span>
+                    </li>
+                    <li class="nav-item">
+                        <span class="nav-link text-uppercase">Mens watches</span>
+                    </li>
+                    <li class="nav-item">
+                        <span class="nav-link text-uppercase">Ladies watches</span>
+                    </li>
+                    <li class="nav-item">
+                        <span class="nav-link text-uppercase">Sell your watch</span>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link text-uppercase">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="aboutme.html" class="nav-link text-uppercase">About Me</a>
+                    </li>
+                    <li class="nav-item mr-auto">
+                        <a href="../sitemap.xml" class="nav-link text-uppercase">Sitemap</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="copyrights" class="container-fluid py-2 text-center text-dark">
+                <span>Copyrights&copy; 2018 Nikola Jovi&#263;</span>
+            </div>
+        </footer>
+
+        <script src="../js/jquery.min.js"></script>
+        <script src="../js/myscripts.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+    </body>
+</html>
