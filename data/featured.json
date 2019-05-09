@@ -1,0 +1,18 @@
+[
+    {
+        "watchId": 0,
+        "name": "MENS WATCHES"
+    },
+    {
+        "watchId": 1,
+        "name": "LADIES WATCHES"
+    },
+    {
+        "watchId": 3,
+        "name": "LUXURY WATCHES"
+    },
+    {
+        "watchId": 2,
+        "name": "DESIGNER WATCHES"
+    }
+]
