@@ -138,3 +138,20 @@ function loadJson(path, successCallback)
         }
     });
 }
+
+function filterManager(filterSettings, filterSettingsChanged)
+{
+    this.filterSettings = filterSettings;
+
+    this.setMaxPrice = function(max)
+    {
+        this.filterSettings.maxPrice = max;
+        filterSettingsChanged();
+    };
+
+    this.setMinPrice = function(min)
+    {
+        this.filterSettings.minPrice = min;
+        filterSettingsChanged();
+    }
+}
