@@ -3,6 +3,7 @@
         "id": 0,
         "name": "Premium 1",
         "image": "mens-watch.jpg",
+        "price": 129,
         "genderId": 1,
         "typeId": 0,
         "manufacturerId": 0
@@ -11,6 +12,7 @@
         "id": 1,
         "name": "Designer 1",
         "image": "ladies-watch.jpg",
+        "price": 359,
         "genderId": 0,
         "typeId": 1,
         "manufacturerId": 4
@@ -19,6 +21,7 @@
         "id": 2,
         "name": "Designer 2",
         "image": "designer-watch.jpg",
+        "price": 249,
         "genderId": 2,
         "typeId": 1,
         "manufacturerId": 1
@@ -27,6 +30,7 @@
         "id": 3,
         "name": "Premium 2",
         "image": "luxury-watch.jpg",
+        "price": 459,
         "genderId": 1,
         "typeId": 0,
         "manufacturerId": 6
@@ -35,6 +39,7 @@
         "id": 4,
         "name": "Premium 3",
         "image": "g-item1.jpg",
+        "price": 159,
         "genderId": 0,
         "typeId": 0,
         "manufacturerId": 4
@@ -43,6 +48,7 @@
         "id": 5,
         "name": "Premium 4",
         "image": "g-item2.jpg",
+        "price": 49,
         "genderId": 1,
         "typeId": 0,
         "manufacturerId": 0
@@ -51,6 +57,7 @@
         "id": 6,
         "name": "Designer 3",
         "image": "g-item3.jpg",
+        "price": 59,
         "genderId": 2,
         "typeId": 1,
         "manufacturerId": 4
@@ -59,6 +66,7 @@
         "id": 7,
         "name": "Designer 4",
         "image": "g-item4.jpg",
+        "price": 119,
         "genderId": 0,
         "typeId": 1,
         "manufacturerId": 3
@@ -67,6 +75,7 @@
         "id": 8,
         "name": "Premium 5",
         "image": "g-item5.jpg",
+        "price": 179,
         "genderId": 0,
         "typeId": 0,
         "manufacturerId": 7
@@ -75,6 +84,7 @@
         "id": 9,
         "name": "Premium 6",
         "image": "g-item6.jpg",
+        "price": 229,
         "genderId": 2,
         "typeId": 0,
         "manufacturerId": 0
@@ -83,6 +93,7 @@
         "id": 10,
         "name": "Designer 5",
         "image": "g-item7.jpg",
+        "price": 29,
         "genderId": 2,
         "typeId": 1,
         "manufacturerId": 5
@@ -91,6 +102,7 @@
         "id": 11,
         "name": "Extra 1",
         "image": "g-item8.jpg",
+        "price": 19,
         "genderId": 1,
         "typeId": 0,
         "manufacturerId": 2
@@ -99,6 +111,7 @@
         "id": 12,
         "name": "Luxury 1",
         "image": "g-item9.jpg",
+        "price": 199,
         "genderId": 1,
         "typeId": 0,
         "manufacturerId": 2
@@ -107,6 +120,7 @@
         "id": 13,
         "name": "Cool 1",
         "image": "g-item10.jpg",
+        "price": 239,
         "genderId": 2,
         "typeId": 1,
         "manufacturerId": 1
@@ -115,6 +129,7 @@
         "id": 14,
         "name": "Cool 2",
         "image": "g-item11.jpg",
+        "price": 99,
         "genderId": 2,
         "typeId": 1,
         "manufacturerId": 0
@@ -123,6 +138,7 @@
         "id": 15,
         "name": "Luxury 2",
         "image": "g-item12.jpg",
+        "price": 329,
         "genderId": 1,
         "typeId": 0,
         "manufacturerId": 6
