@@ -47,7 +47,7 @@ function onFeaturedWatchesLoaded()
         let watch = watches.find(w => w.id == featured.watchId);
 
         featuredHtml += `<div class="col-lg-3 col-md-6 col-xs-12 p-2">
-                            <div class="category p-2">
+                            <div class="category p-2" onclick='openWatchesFromIndex(${JSON.stringify(featured.reference)})'>
                                 <img src="img/${watch.image}" class="img-fluid mx-auto d-block" alt="${featured.name}" />
                                 <span class="text-uppercase text-dark d-block text-center py-1">${featured.name}</span>
                             </div>

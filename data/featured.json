@@ -1,18 +1,34 @@
 [
     {
         "watchId": 0,
-        "name": "MENS WATCHES"
+        "name": "MENS WATCHES",
+        "reference": {
+            "type": "gender",
+            "referenceId": 1
+        }
     },
     {
         "watchId": 1,
-        "name": "LADIES WATCHES"
+        "name": "LADIES WATCHES",
+        "reference": {
+            "type": "gender",
+            "referenceId": 0
+        }
     },
     {
         "watchId": 3,
-        "name": "LUXURY WATCHES"
+        "name": "LUXURY WATCHES",
+        "reference": {
+            "type": "types",
+            "referenceId": 0
+        }
     },
     {
         "watchId": 2,
-        "name": "DESIGNER WATCHES"
+        "name": "DESIGNER WATCHES",
+        "reference": {
+            "type": "types",
+            "referenceId": 1
+        }
     }
 ]
