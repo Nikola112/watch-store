@@ -163,7 +163,7 @@ function renderGender(filtersHtml)
     {
         genderHtml += `<label class="text-dark pl-3 d-block">
                                  <input type="checkbox" class="filter-checkbox" onchange="genderCheckboxChanged(${m.id}, checked)" ${filters.gender.includes(m.id) ? "checked" : ""} />
-                                 ${m.name} (${watches.filter(w => w.genderId == m.id).length})
+                                 ${m.name} Watches (${watches.filter(w => w.genderId == m.id).length})
                              </label>`;
     }
 
