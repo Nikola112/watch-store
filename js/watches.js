@@ -13,8 +13,12 @@ let manufacturers;
 let genders;
 let types;
 
+let sort = 0;
+
 function initialize()
 {
+    subscribeToEvents();
+
     loadWatches(function(data)
     {
         watches = data;
@@ -44,6 +48,17 @@ function initialize()
     });
 }
 
+function subscribeToEvents()
+{
+    $("#sort-box").on("change", onSortBoxValueChanged)
+}
+
+function onSortBoxValueChanged()
+{
+    sort = this.value;
+    displayWatches();
+    console.log(sort);
+}
 
 function itemLoaded()
 {
@@ -56,7 +71,7 @@ function itemLoaded()
 function onEverithingLoaded()
 {
     loadLocalStorage();
-    renderItems(watches);
+    displayWatches();
 }
 
 function loadLocalStorage()
@@ -71,7 +86,47 @@ function loadLocalStorage()
     }
 }
 
-function renderItems(_watches)
+function displayWatches()
+{
+    let _watches = sortWatches(watches);
+    console.log(_watches);
+    renderWatches(_watches);
+}
+
+function sortWatches(_watches)
+{
+    _watches = _watches.slice(0);
+    if(sort == 1)
+    {
+        return _watches.sort((a, b) => 
+        {
+            let aFullName = manufacturers.find(m => m.id == a.manufacturerId).name + " " + a.name;
+            let bFullName = manufacturers.find(m => m.id == b.manufacturerId).name + " " + b.name;
+            return aFullName.localeCompare(bFullName)
+        });
+    }
+    else if(sort == 2)
+    {
+        return _watches.sort((a, b) => 
+        {
+            let aFullName = manufacturers.find(m => m.id == a.manufacturerId).name + " " + a.name;
+            let bFullName = manufacturers.find(m => m.id == b.manufacturerId).name + " " + b.name;
+            return -aFullName.localeCompare(bFullName)
+        });
+    }
+    else if(sort == 3)
+    {
+        return _watches.sort((a, b) => a.price - b.price);
+    }
+    else if(sort == 4)
+    {
+        return _watches.sort((a, b) => b.price - a.price);
+    }
+
+    return _watches;
+}
+
+function renderWatches(_watches)
 {
     let watchesHtml = "";
 

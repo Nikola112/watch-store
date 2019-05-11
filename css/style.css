@@ -503,3 +503,11 @@ h1 {
 {
   font-size: 1.1rem;
 }
+
+#sort-box
+{
+  font-size: 1rem;
+  padding: 0.5rem;
+  display: block;
+  margin-left: auto;
+}
