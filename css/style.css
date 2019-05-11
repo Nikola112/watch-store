@@ -511,3 +511,15 @@ h1 {
   display: block;
   margin-left: auto;
 }
+
+.filter-headers
+{
+  font-size: 1rem;
+}
+
+.filter-checkbox
+{
+  vertical-align: middle; 
+  position: relative;
+  bottom: .095em;
+}
