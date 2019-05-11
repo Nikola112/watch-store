@@ -13,11 +13,6 @@ let manufacturers;
 let genders;
 let types;
 
-let priceRange = {
-    start: 0,
-    end: 9999
-};
-
 function initialize()
 {
     loadWatches(function(data)
@@ -49,6 +44,7 @@ function initialize()
     });
 }
 
+
 function itemLoaded()
 {
     if(watchesLoaded && manufacturersLoaded && gendersLoaded && typesLoaded)
@@ -59,51 +55,46 @@ function itemLoaded()
 
 function onEverithingLoaded()
 {
-    getPriceRange();
     loadLocalStorage();
-}
-
-function getPriceRange()
-{
-    priceRange.start = getMinimumPrice(watches);
-    priceRange.end = getMaximumPrice(watches);
-
-    //updatePriceRange();
+    renderItems(watches);
 }
 
 function loadLocalStorage()
 {
+    let _filters = loadObjectFromLocalStorage("filters");
 
+    if(_filters != null)
+    {
+        loadFilters(_filters);
+
+        localStorage.removeItem("filters");
+    }
 }
 
-function getMinimumPrice(_watches)
+function renderItems(_watches)
 {
-    let minimum = _watches[0].price;
+    let watchesHtml = "";
 
-    for(let i = 1; i < _watches.length; i++)
+    for(let watch of _watches)
     {
-        if(_watches[i].price < minimum)
-        {
-            minimum = _watches[i].price
-        }
+        let manufacturer = manufacturers.find(m => m.id == watch.manufacturerId);
+
+        watchesHtml += `<div class="col-lg-3 col-md-6 col-xs-12 p-2">
+                            <div class="category p-2">
+                                <img src="../img/${watch.image}" class="img-fluid mx-auto d-block" alt="${watch.name}" />
+                                <span class="text-uppercase text-dark d-block text-center py-2">${manufacturer.name} ${watch.name}</span>
+                                <span class="text-uppercase price text-dark d-block text-center pb-3 pt-1">${watch.price}$</span>
+                                <input type="button" class="add-to-cart-button" value="Add to cart" />
+                            </div>
+                        </div>`;
     }
 
-    return minimum;
+    $("#watch-items").html(watchesHtml);
 }
 
-function getMaximumPrice(_watches)
+function loadFilters(_filters)
 {
-    let maximum = _watches[0].price;
 
-    for(let i = 1; i < _watches.length; i++)
-    {
-        if(_watches[i].price > maximum)
-        {
-            maximum = _watches[i].price
-        }
-    }
-
-    return maximum;
 }
 
 function loadWatches(callback)
@@ -139,19 +130,12 @@ function loadJson(path, successCallback)
     });
 }
 
-function filterManager(filterSettings, filterSettingsChanged)
+function loadObjectFromLocalStorage(key)
 {
-    this.filterSettings = filterSettings;
+    return JSON.parse(localStorage.getItem(key));
+}
 
-    this.setMaxPrice = function(max)
-    {
-        this.filterSettings.maxPrice = max;
-        filterSettingsChanged();
-    };
-
-    this.setMinPrice = function(min)
-    {
-        this.filterSettings.minPrice = min;
-        filterSettingsChanged();
-    }
+function saveObjectToLocalStorage(key, object)
+{
+    localStorage.setItem(key, JSON.stringify(object));
 }

@@ -480,3 +480,26 @@ h1 {
   text-align: center;
   font-size: 1.2rem;
 }
+
+.add-to-cart-button
+{
+  background-color: #e9a403;
+  color: #000;
+  font-weight: bold;
+  font-size: 1rem;
+  border: 0px none;
+  width: 100%;
+  padding: 0.5rem 0px;
+  cursor: pointer;
+  box-shadow: 3px 3px 3px #cacaca;
+}
+
+#filters
+{
+  border-right: 1px solid #d7d7d7;
+}
+
+.price
+{
+  font-size: 1.1rem;
+}
