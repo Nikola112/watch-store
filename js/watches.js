@@ -140,9 +140,9 @@ function renderTypes(filtersHtml)
     for(let m of types)
     {
         typesHtml += `<label class="text-dark pl-3 d-block">
-                                 <input type="checkbox" class="filter-checkbox" onchange="typeCheckboxChanged(${m.id}, checked)" ${filters.types.includes(m.id) ? "checked" : ""} />
-                                 ${m.name} (${watches.filter(w => w.typeId == m.id).length})
-                             </label>`;
+                            <input type="checkbox" class="filter-checkbox" onchange="typeCheckboxChanged(${m.id}, checked)" ${filters.types.includes(m.id) ? "checked" : ""} />
+                            ${m.name} (${watches.filter(w => w.typeId == m.id).length})
+                        </label>`;
     }
 
     typesHtml += `</div>`;
@@ -176,18 +176,6 @@ function genderCheckboxChanged(mId, value)
     value ? filters.gender.push(mId) : filters.gender = filters.gender.filter(f => f != mId);
     displayWatches();
 }
-
-// function arraySum(arr, f)
-// {
-//     let _sum = 0;
-
-//     for(let m of arr)
-//     {
-//         _sum += f(m);
-//     }
-
-//     return _sum;
-// }
 
 function cloneArray(arr)
 {
@@ -274,16 +262,57 @@ function renderWatches(_watches)
         let manufacturer = manufacturers.find(m => m.id == watch.manufacturerId);
 
         watchesHtml += `<div class="col-lg-3 col-md-6 col-xs-12 p-2">
-                            <div class="category p-2">
+                            <div class="store-item p-2">
                                 <img src="../img/${watch.image}" class="img-fluid mx-auto d-block" alt="${watch.name}" />
                                 <span class="text-uppercase text-dark d-block text-center py-2">${manufacturer.name} ${watch.name}</span>
                                 <span class="text-uppercase price text-dark d-block text-center pb-3 pt-1">${watch.price}$</span>
-                                <input type="button" class="add-to-cart-button" value="Add to cart" />
+                                <input type="button" onclick="addWatchToCart(${watch.id})" class="add-to-cart-button" value="Add to cart" />
                             </div>
                         </div>`;
     }
 
     $("#watch-items").html(watchesHtml);
+}
+
+function addWatchToCart(id)
+{
+    let cart = loadObjectFromLocalStorage("cart");
+
+    if(cart == null)
+    {
+        cart = [];
+    }
+
+    let item = cart.find(i => i.id == id);
+
+    if(item == null)
+    {
+        item = {
+            id: id,
+            count: 1
+        };
+
+        cart.push(item);
+    }
+    else
+    {
+        item.count += 1;
+    }
+
+    saveObjectToLocalStorage("cart", cart);
+    $("#cart-link").text(`${arraySum(cart, i => i.count)} Items`);
+}
+
+function arraySum(arr, f)
+{
+    let _sum = 0;
+
+    for(let m of arr)
+    {
+        _sum += f(m);
+    }
+
+    return _sum;
 }
 
 function loadWatches(callback)

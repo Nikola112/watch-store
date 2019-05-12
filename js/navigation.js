@@ -1,3 +1,15 @@
+$(function()
+{
+    countCartItems();
+});
+
+function countCartItems()
+{
+    let cart = loadObjectFromLocalStorage("cart");
+    
+    $("#cart-link").text(`${arraySum(cart, i => i.count)} Items`);
+}
+
 function openWatchesFromIndex(reference)
 {
     navigateToWatchesWithReference(reference, "content/watches.html")
@@ -99,6 +111,23 @@ function navigateToWatchesWithBrand(brandId)
     saveObjectToLocalStorage("filters", filters);
 
     window.location.href = "watches.html";
+}
+
+function arraySum(arr, f)
+{
+    let _sum = 0;
+
+    for(let m of arr)
+    {
+        _sum += f(m);
+    }
+
+    return _sum;
+}
+
+function loadObjectFromLocalStorage(key)
+{
+    return JSON.parse(localStorage.getItem(key));
 }
 
 function saveObjectToLocalStorage(key, object)

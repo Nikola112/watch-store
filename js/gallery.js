@@ -12,7 +12,7 @@ function initialize()
         for(let watch of watches)
         {
             imagesHtml += `<div class="col-xs-12 col-md-6 col-lg-3 p-1 pb-3">
-                                <div class="gallery-item">
+                                <div class="gallery-item p-1">
                                     <img src="../img/${watch.image}" alt="${watch.name}" class="img-fluid" />
                                 </div>
                             </div>`;
