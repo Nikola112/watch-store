@@ -543,3 +543,166 @@ h1 {
   -webkit-box-shadow: 0px 0px 8px 2px #bdbdbd;
   -moz-box-shadow: 0px 0px 8px 2px #bdbdbd;
   box-shadow: 0px 0px 8px 2px #bdbdbd; }
+
+#cart-items
+{
+  border-right: 1px solid #bbb;
+  border-left: 1px solid #bbb;
+  border-bottom: 1px solid #bbb;
+}
+
+.cart-item
+{
+  border-top: 1px solid #bbb;
+}
+
+.cart-img
+{
+  display: block;
+  width: 95%;
+  height: auto;
+  -webkit-box-shadow: 0px 0px 3px 1px #dbdbdb;
+  -moz-box-shadow: 0px 0px 3px 1px #dbdbdb;
+  box-shadow: 0px 0px 3px 1px #dbdbdb;
+}
+
+.cart-name-text
+{
+  font-size: 1.2rem;
+}
+
+.cart-text
+{
+  font-size: 1rem;
+}
+
+.cart-price-text
+{
+  font-size: 1.1rem;
+  color: #222222;
+}
+
+.cart-total-container
+{
+  display: flex;
+}
+
+.cart-total-text
+{
+  font-size: 1.2rem;
+  align-self: center;
+  margin-right: 1.25rem;
+  display: block;
+  margin-left: auto;
+}
+
+.cart-item-controls
+{
+  display: flex;
+  align-items: center;
+  flex-direction: column-reverse;
+  border-left: 1px solid #bbb;
+}
+
+.cart-remove-button
+{
+  align-self: flex-end;
+  background-color: #e9a403;
+  padding: 1rem;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  border: 0px none;
+  transition: background-color 0.2s;
+}
+
+.cart-remove-button:hover
+{
+  background-color: #ffb200;
+}
+
+.cart-control-button
+{
+  background-color: #e9a403;
+  padding: .5rem .95rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+  cursor: pointer;
+  border: 0px none;
+  transition: background-color 0.2s;
+}
+
+.cart-control-button:hover
+{
+  background-color: #ffb200;
+}
+
+.cart-item-count
+{
+  padding: .48rem 1rem;
+  font-size: 1.25rem;
+  border-top: 1px solid #f0f0f0;
+  border-bottom: 1px solid #f0f0f0;
+  color: #000;
+}
+
+.cart-controls-middle
+{
+  padding: 1rem 0px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  width: 100%;
+}
+
+.cart-top
+{
+  border-top: 1px solid #bbb;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+.cart-clear
+{
+  display: block;
+  background-color: #e9a403;
+  padding: 1rem 2rem;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  border: 0px none;
+  transition: background-color 0.2s;
+}
+
+.cart-clear:hover
+{
+  background-color: #ffb200;
+}
+
+.cart-items-header
+{
+  display: block;
+  align-self: center;
+  font-size: 1.25rem;
+  text-align: center;
+  padding-left: 1rem;
+}
+
+.cart-bottom
+{
+  border-top: 1px solid #bbb;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+.cart-items-total
+{
+  display: block;
+  align-self: center;
+  font-size: 1.25rem;
+  text-align: center;
+  padding-top: 0.5rem;
+  padding-right: 1rem;
+}

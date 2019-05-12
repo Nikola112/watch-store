@@ -7,8 +7,8 @@
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
         <meta name="author" content="Nikola Jovic" />
-        <meta name="keywords" content="watch, watchshop, watches, contact, email, message" />
-        <meta name="description" content="You can contact me here." />
+        <meta name="keywords" content="watch, watchshop, watches, gallery" />
+        <meta name="description" content="This is watch gallery." />
 
         <link rel="shortcut icon" href="../img/icon.png" />
 
@@ -97,7 +97,7 @@
                                 <li class="nav-item">
                                     <a class="nav-link link text-uppercase" href="../index.html">Home</a>
                                 </li>
-                                <li class="nav-item">
+                                <li class="nav-item active">
                                     <a class="nav-link link text-uppercase" href="gallery.html">Gallery</a>
                                 </li>
                                 <li class="nav-item">
@@ -113,7 +113,7 @@
                                 <li class="nav-item">
                                     <span class="nav-link link text-uppercase">Sell your watch</span>
                                 </li>
-                                <li class="nav-item active">
+                                <li class="nav-item">
                                     <a class="nav-link link text-uppercase" href="contact.html">Contact</a>
                                 </li>
                                 <li class="nav-item">
@@ -130,41 +130,23 @@
         </header>
 
         <div id="main">
-            <div class="container" id="contact">
-                <div class="row">
-                    <div class="col-12 border-bottom">
-                        <h1 class="text-dark text-center text-uppercase py-3">
-                            Contact
-                        </h1>
-                    </div>
+            <div class="container">
+                <div class="row pb-2">
                     <div class="col-12">
-                        <div class="row">
-                            <div class="col-xs-12 col-lg-8">
-                                <h2 class="text-dark text-center text-uppercase py-3">
-                                    Get in touch
-                                </h2>
-                                
-                                <form action="contact.php" method="post" class="pb-3">
-                                    <input type="text" placeholder="First name*" />
-                                    <input type="text" placeholder="Last name*" />
-                                    <input type="email" placeholder="Email*" />
-                                    <input type="text" placeholder="Telephone" />
-                                    <input type="text" placeholder="Subject" />
-                                    <textarea name="text" id="text-area" cols="50" rows="10" placeholder="Text...*" class="textarea-field"></textarea>
-                                    <input type="submit" value="Send" />
-                                </form>
-                            </div>
-                            <div class="col-xs-12 col-lg-4">
-                                <hr class="d-block d-lg-none my-1" />
-                                <h2 class="text-dark text-center text-uppercase py-3">
-                                    Info
-                                </h2>
+                        <h1 class="text-center text-dark text-uppercase py-3 mb-0">
+                            Cart
+                        </h1>
+                        <hr class="mt-0" />
+                    </div>
+                </div>
+                <div id="cart-items" class="row mt-2 mb-4">
+                    <div class="col-12 cart-top p-2">
+                        <input type="button" class="cart-clear text-antialiased" value="Clear" />
+                        <h2 class="text-dark text-antialiased cart-items-header">Items: 0</h2>
+                    </div>
 
-                                <p class="text-dark px-2">My Email: &nbsp;<a href="mailto:nikola.jovic.100.17@ict.edu.rs">nikola.jovic.100.17@ict.edu.rs</a></p>
-                                <p class="text-dark px-2">My Phone: &nbsp;<span>011/8700000</span></p>
-                                <p class="text-dark px-2">My Facebook: &nbsp;<span>Facebook</span></p>
-                            </div>
-                        </div>
+                    <div class="col-12 cart-bottom p-2">
+                        <h2 class="text-dark text-antialiased cart-items-total">Total: 0.00$</h2>
                     </div>
                 </div>
             </div>
@@ -230,6 +212,7 @@
         <script src="../js/jquery.min.js"></script>
         <script src="../js/myscripts.js"></script>
         <script src="../js/navigation.js"></script>
+        <script src="../js/cart.js"></script>
         <script src="../js/bootstrap.min.js"></script>
     </body>
 </html>
