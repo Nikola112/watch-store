@@ -7,7 +7,8 @@ function countCartItems()
 {
     let cart = loadObjectFromLocalStorage("cart");
     
-    $("#cart-link").text(`${arraySum(cart, i => i.count)} Items`);
+    if(cart != null)
+        $("#cart-link").text(`${arraySum(cart, i => i.count)} Items`);
 }
 
 function openWatchesFromIndex(reference)
