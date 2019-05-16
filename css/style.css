@@ -706,3 +706,14 @@ h1 {
   padding-top: 0.5rem;
   padding-right: 1rem;
 }
+
+.validation-warning
+{
+  color: red;
+  margin: 0px 1.7rem;
+}
+
+#contact .validation-warning
+{
+  margin: 0px 2.2rem;
+}
